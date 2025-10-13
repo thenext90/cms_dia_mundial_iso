@@ -1,19 +1,36 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Hero.astro';
-import ServicesImplementation from '../components/ServicesImplementation.astro';
-// Force rebuild - August 6, 2025
-import ISOToolsSection from '../components/ISOToolsSection.astro';
-import NewsSection from '../components/NewsSection.astro';
-import ServicesOverview from '../components/ServicesOverview.astro';
 ---
 
-<Layout title="CMS Consultores - Calidad y Gestión">
-  <main>
-    <Hero />
-    <ServicesOverview />
-    <ISOToolsSection />
-    <NewsSection />
-    <ServicesImplementation />
-  </main>
-</Layout>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CMS Consultores - Esencial</title>
+    <style>
+      body { font-family: 'Inter', Arial, sans-serif; background: #fff; margin: 0; }
+      .center { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+      .btns { display: flex; gap: 1.5rem; margin-top: 2rem; }
+      .btn {
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: #fff;
+        background: #2563eb;
+        text-decoration: none;
+        transition: background 0.2s;
+      }
+      .btn:hover { background: #1e40af; }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1 class="text-3xl font-bold mb-6">CMS Consultores</h1>
+      <div class="btns">
+  <!-- Botón Servicios eliminado -->
+        <a href="https://certificate.cqs-cms.co.uk/" class="btn" target="_blank">Certificados UK</a>
+        <a href="#contacto" class="btn">Contacto</a>
+      </div>
+    </div>
+  </body>
+</html>
