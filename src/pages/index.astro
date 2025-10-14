@@ -178,6 +178,26 @@
         text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       }
 
+      .hero-date {
+        font-size: 2.2rem;
+        font-weight: 600;
+        color: #fbbf24;
+        margin-bottom: 2rem;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .world-icon {
+        font-size: 2.5rem;
+        color: #fbbf24;
+        opacity: 0.9;
+        animation: pulse 2s infinite;
+      }
+
       .hero-subtitle {
         font-size: 1.8rem;
         font-weight: 400;
@@ -507,6 +527,15 @@
         }
       }
 
+      @keyframes pulse {
+        0%, 100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.1);
+        }
+      }
+
       /* Responsive Design */
       @media (max-width: 768px) {
         .nav-menu {
@@ -519,6 +548,15 @@
 
         .hero-title {
           font-size: 2.5rem;
+        }
+
+        .hero-date {
+          font-size: 1.6rem;
+          gap: 0.8rem;
+        }
+
+        .world-icon {
+          font-size: 2rem;
         }
 
         .hero-subtitle {
@@ -657,6 +695,10 @@
     <section id='inicio' class='hero'>
       <div class='hero-content'>
         <h1 class='hero-title'>Día Mundial de la Normalización</h1>
+        <div class='hero-date'>
+          <span>14 Octubre 2025</span>
+          <i class='fas fa-globe world-icon'></i>
+        </div>
       </div>
     </section>
 
